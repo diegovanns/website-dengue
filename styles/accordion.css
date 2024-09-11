@@ -1,0 +1,44 @@
+
+
+.accordion {
+    display: grid;
+    margin: 10px auto; /* Adiciona um espaço entre as caixas e as centraliza */
+    padding: 10px; /* Espaçamento interno da caixa */
+    align-items: center;
+    text-align: center;
+    line-height: 30px; /* Centraliza o texto verticalmente */
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.accordion-item {
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    background-color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ccc; 
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    padding: 0 10px;
+    background-color: #1e1c13;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.accordion-content.active {
+    max-height: 1000px; 
+    padding: 10px;
+}
+
+.dicas {
+    text-align: center; 
+}
